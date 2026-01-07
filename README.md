@@ -1,7 +1,7 @@
 # latex2pdfa
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-A command line utility to automate the process of compiling a LaTeX project to a PDF complaint with the PDF/A standard.
+A command line utility to automate the process of compiling a LaTeX project to a PDF compliant with the PDF/A standard.
 
 
 ## Setup 
@@ -32,9 +32,9 @@ Run the following in your terminal and follow the instructions:
 ```bash 
 latex2pdfa path/to/your/main_tex_file.tex 
 ```
-By default, the generated PDF will comply with the `1b` standard which most universities require.
+By default, the generated PDF will comply with the `1b` standard, which most universities require.
 
-You can specify an output filename with `--output-filename`, otherwise the generated PDF will have the same name of your
+You can specify an output filename with `--output-filename`; otherwise, the generated PDF will have the same name as your
 `main_tex_file` followed by `-PDFA-1b`. 
 
 -----
@@ -107,13 +107,13 @@ By digging around on Google, you can find people saying that you can perform the
 
 ## Notes
  
-- The use of the `pdfx` package alone still produce validation errors!!
-- The use of `Ghostscript` alone to convert the PDF to PDF/A is not always successful. Sometimes the old versions does not work. Sometimes, the recent versions does not have the same arguments because it is always evolving, and even if it works, you may find that the links are not working, or the table of contents does not exist, etc.
-After a lot (I mean a lot) of trial and error, I found that the version `9.23` is giving the best results, I decided to include it with the project files.
-- The script uses both to produce a high quality PDF/A directly from the LaTex source files.
+- The use of the `pdfx` package alone still produces validation errors!
+- The use of `Ghostscript` alone to convert the PDF to PDF/A is not always successful. Sometimes the old versions do not work. Sometimes the recent versions do not have the same arguments because it is always evolving, and even if it works, you may find that the links are not working or the table of contents does not exist, etc.
+After a lot (I mean a lot) of trial and error, I found that version `9.23` gives the best results, so I decided to include it with the project files.
+- The script uses both to produce a high-quality PDF/A directly from the LaTeX source files.
 - The script is only compatible with the `b` conformance level.
-Unfortunately, there is noway to generate a fully compatible `PDF/A-a` from LaTex until now (as of my knowledge).
-- More interesting information are available in the [FAQs](https://github.com/matteosecli/pdf2archive#faqs) section of [pdf2archive](https://github.com/matteosecli/pdf2archive).
+Unfortunately, there is no way to generate a fully compatible `PDF/A-a` from LaTeX until now (to my knowledge).
+- More interesting information is available in the [FAQs](https://github.com/matteosecli/pdf2archive#faqs) section of [pdf2archive](https://github.com/matteosecli/pdf2archive).
 
 
 ## License
